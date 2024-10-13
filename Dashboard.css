@@ -230,7 +230,7 @@ p{
         height: calc(100vh - 4rem); 
         width: 50%; 
         position: fixed;
-        top: 11vh; 
+        top: 12vh; 
         transform: translateX(-100%); 
         z-index: 1050;
     }
