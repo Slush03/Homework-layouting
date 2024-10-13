@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Learning</title>
+</head>
+<style>
+    body {
+        margin: 0;
+    }    
+
+    .container {
+        display: grid;
+        height: 100vh;
+        grid-template-areas: "header header header header header header header header header header header header" 
+        "nav nav content content content content content content content promo promo promo"
+        "footer footer footer footer footer footer footer footer footer footer footer footer";
+        grid-template-rows: 100px auto 100px;
+    }
+
+    .header {
+        background-color: purple;
+        grid-area: header;
+        justify-content: center;
+        color: white;
+        align-items: center;
+        display: flex;
+
+    }
+
+    .nav {
+        background-color: lightblue;
+        grid-area: nav;
+        justify-content: center;
+        color: white;
+        align-items: center;
+        display: flex;
+    }
+
+    .content {
+        background-color: grey;
+        grid-area: content;
+        justify-content: center;
+        color: white;
+        align-items: center;
+        display: flex;
+
+    }
+    .promo {
+        background-color: burlywood;
+        grid-area: promo;
+        justify-content: center;
+        color: white;
+        align-items: center;
+        display: flex;
+    }
+
+    .footer {
+        background-color: red;
+        grid-area: footer;
+        justify-content: center;
+        color: white;
+        align-items: center;
+        display: flex;
+
+    }
+
+    /* laptop */
+    @media screen and (min-width: 1024px) {
+        .container {
+        grid-template-areas: "header header header header header header header header header header header header" 
+        "nav nav content content content content content content content promo promo promo"
+        "footer footer footer footer footer footer footer footer footer footer footer footer";
+        grid-template-rows: 100px auto 100px;
+        }
+    }
+
+    /* tablet */
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        .container {
+        grid-template-areas: "header header header header header header header header header header header header" 
+        "nav nav content content content content content content content content content content "
+        "promo promo promo promo promo promo promo promo promo promo promo promo"
+        "footer footer footer footer footer footer footer footer footer footer footer footer";
+        grid-template-rows: 80px auto 80px 80px;
+        }
+    }
+
+    /* mobile */
+    @media screen and (max-width: 767px) {
+        .container {
+        grid-template-areas: "header header header header header header header header header header header header" 
+        "nav nav nav nav nav nav nav nav nav nav nav nav"
+        "content content content content content content content content content content content content"
+        "promo promo promo promo promo promo promo promo promo promo promo promo"
+        "footer footer footer footer footer footer footer footer footer footer footer footer";
+        grid-template-rows: 60px auto auto 60px 60px ;
+        }
+        .header{
+        background-color: green;
+        }
+    }
+
+
+        
+</style>
+
+<body>
+    <div class="container">
+        <div class="header"><h2>Header</h2></div>
+        <div class="nav"><h2>Navbar</h2></div>
+        <div class="content"><h2>Content</h2></div>
+        <div class="promo"><h2>Promo</h2></div>
+        <div class="footer"><h2>Footer</h2></div>
+    </div>
+</body>
+
+</html>

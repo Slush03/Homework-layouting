@@ -1,0 +1,278 @@
+body {
+    padding-top: 4rem;
+}
+
+p{
+    text-align: justify;
+}
+
+.LiHeader{
+    color: black;
+    margin-left: 6%;
+    padding: 1%;
+}
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    border: 1px groove #4040403a;
+    background-color: #fff;
+}
+
+.navbar img{
+    height: 3rem;
+    width: auto;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+}
+
+.navbar-nav img{
+    border: 1px groove #4040403a;
+}
+
+.bell-icon {
+    font-size: 1.5rem;
+    margin-right: 2rem;
+}
+#bellDropdown .dropdown-menu {
+    min-width: 20rem;
+    border: none; 
+}
+
+#bellDropdown .card {
+    width: 100%; 
+    min-width: 20rem;
+    border: none; 
+}
+
+#bellDropdown .card-body {
+    padding: 1.5rem;
+}
+
+#bellDropdown .btn {
+    background-color:#03adee ;
+    color: #fff;
+    width: 100%;
+}
+
+.sidebar {
+    height: calc(100vh - 4rem); 
+    width: 15%; 
+    position: fixed;
+    top: 11.75vh; 
+    left: 0;
+    transition: transform 0.3s ease; 
+    overflow: hidden;
+    color : #404040;
+    border: 1px groove #4040403a;
+    background-color: #fff;
+}
+
+#sidebarMenu .nav{
+    margin-top: 10%;
+}
+
+.sidebar.shown {
+    transform: translateX(0); 
+}
+
+.sidebar.hidden {
+    transform: translateX(-100%); 
+}
+
+.sidebar .nav-link {
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .nav-link i {
+    font-size: 1.5rem;
+}
+
+.sidebar .nav-link span {
+    margin-left: 0.7rem;
+    white-space: nowrap;
+    transition: opacity 0.3s ease;
+}
+
+#profile{
+    margin-left: 20%;
+    margin-top: 10vh;
+    width: 75%;
+    border-radius: 20px;
+}
+
+
+#Lcontent {
+    margin-left: 20%;
+    margin-top: 10vh;
+    width: 50%;
+    border-radius: 20px;
+}
+
+#Lcontent .card{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#Lcontent .card-body{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+#Lcontent .btn{
+    margin-top: auto;
+}
+
+#Lcontent p{
+    text-align: justify;
+}
+
+#Lcontent img{
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    margin: 5%;
+}
+
+#Konten{
+    margin-left: 20%;
+    margin-top: 10vh;
+    width: 75%;
+    border-radius: 20px;
+}
+
+.costume-border{
+    border: 1px solid #dee2e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.costume-border p{
+    margin: 0;
+}
+#collapseOne .due-date{
+    color: #03adee;
+}
+
+#buttonContainer .btn{
+    text-align: right;
+    background-color: #03adee;
+    color: gray;
+}
+#videoContainer{
+    display: none;
+    margin-top:10px ;
+}
+
+.lockContainer{
+    text-align: right;
+    margin-right: 2%;
+}
+
+.custom-progress-bar {
+    background-color: #03adee;
+}
+
+#courseProgress .progressInfo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+
+}
+
+#coursePrice .fs-large{
+    font-size: 1.5rem;
+}
+
+#coursePrice img{
+    width: 100%;
+}
+
+#coursePrice .btn{
+    width: 100%;
+}
+
+#courseInclude p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#courseInclude li {
+    margin-right: 1rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+#courseInclude li i {
+    font-size: 1rem;
+    color: #03adee;
+    margin-right: 1rem;
+}
+
+
+@media (max-width: 768px) {
+
+    .navbar-nav {
+        flex-direction: row;
+    }
+
+    .sidebar {
+        height: calc(100vh - 4rem); 
+        width: 50%; 
+        position: fixed;
+        top: 11vh; 
+        transform: translateX(-100%); 
+        z-index: 1050;
+    }
+
+    .sidebar.shown {
+        transform: translateX(0); 
+    }
+
+    #Lcontent {
+        margin-left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #Lcontent .card {
+        display: flex;
+        flex-direction: column; 
+        width: 100%; 
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    #Konten{
+        margin-left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #Konten .due-date{
+        font-size: 0.75rem;
+    }
+
+    #profile{
+        margin-left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+     
+}
